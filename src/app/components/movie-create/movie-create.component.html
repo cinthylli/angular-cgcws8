@@ -1,0 +1,31 @@
+<div class="col-lg-4 mx-auto">
+  <div class="card text-white bg-info mb-3">
+    <div class="card-header tracking-in-contract">
+      Upload Movie
+    </div>
+    <div class="card-body">
+      <form (submit)="uploadMovie(title, genre)" >
+          <div class="form-group">
+              <textarea class="form-control" rows="2" spellcheck="true" placeholder="Title" required #title></textarea>
+          </div>
+        <div class="form-group">
+          <select  class="form-control"  required #genre>
+            <option>Action</option>
+            <option>Adventure</option>
+            <option>Crime</option>
+            <option>Children's</option>
+            <option>Comedy</option>
+            <option>Crime</option>
+            <option>Documentary</option>
+            <option>Drama</option>
+            <option>Fantasy</option>
+            <option>Mistery</option>
+            <option>Sci-Fi</option>
+            <option>Thriller</option>
+          </select>
+        </div>
+        <button class="btn btn-primary btn-block color-change-2x">Upload Movie</button>
+      </form>
+    </div>
+  </div>
+</div>
